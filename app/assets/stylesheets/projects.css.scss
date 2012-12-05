@@ -8,7 +8,7 @@ body{
 	
 	background-color: #0D6370;
 	width: 1024px;
-	height: 100px;
+	height: 100%;
 	margin: auto;
 
 }
@@ -44,6 +44,11 @@ body{
 }
 
 
+#createlink {
+	
+	text-align: center;
+	
+}
 
 #maincontent{
 		minimum-height: 1000px;
@@ -83,4 +88,14 @@ body{
 	/*float: right;*/
 	background-color: black;
 
+}
+
+.contentmargin {
+	
+		margin-left: 10px;
+}
+span{
+	
+	color: green;
+	font-size: 28px
 }

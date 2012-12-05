@@ -1,13 +1,13 @@
 <%= form_for @project do |p| %>
-  <div>
-    <%= p.label :name %><br />
+  <div class="contentmargin">
+    <%= p.label :Name %><br />
     <%= p.text_field :name %>
   </div>
-  <div>
-    <%= p.label :description %><br />
+  <div class="contentmargin">
+    <%= p.label :Description %><br />
     <%= p.text_area :description %>
   </div>
-  <div >
-    <%= p.submit "Add"%>
+  <div class="contentmargin">
+    <%= p.submit "Create Project" %>
   </div>
 <% end %>

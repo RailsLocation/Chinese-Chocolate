@@ -1,10 +1,39 @@
-<h1>Recruit Developer to this project</h1>
+<!DOCTYPE html>
+<html>
+<body>
+  <div id="header">
+    <img  id="logo" src="<%= asset_path( 'logo.png' ) %>" />
+    <h1 id="title">Chinese Chocolate Software Company</h1>
+  </div>
+  <nav id="menubar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="">Gallery</a></li>
+        <li><a href="">Location</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+        
+    </nav>
+
+    <div id="maincontent">
+    <h1>Recruit Developer to this project</h1>
 <%= form_for([@project,@project.developers.build]) do |f| %>
-	<%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :address %>
-  <%= f.text_field :address %>
-  <%= f.label :post %>
-  <%= f.text_field :post %>
-  <%= f.submit "Recruit" %>
+	<div class="contentmargin">
+		<%= f.label :name %>:
+  		<%= f.text_field :name %>
+	</div>
+
+	<div class="contentmargin">
+  		<%= f.label :address %>:
+  		<%= f.text_field :address %>
+  	</div>
+  	<div class="contentmargin">
+  		<%= f.label :post %>:
+  		<%= f.text_field :post %>
+  	</div>
+  	<div class="contentmargin"
+  		<%= f.submit "Recruit" %>
+  	</div>
 <% end %>
+</div>

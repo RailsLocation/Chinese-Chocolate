@@ -16,14 +16,15 @@
 				
 		</nav>
 	<div id="maincontent">
-	<p> <%= link_to("Create New Project",new_project_path) %></p>
+		<h2> Our Recent Projects: </h2>
+	<p> <h2 id="createlink"> <%= link_to("Create New Project",new_project_path) %> </h2> </p>
 	<ul>
 	
 	<% @projects.each do |p| %>
 	<li >
-		<h4>
-			Project Name: <%= p.name%>
-		</h4>
+		
+			<h2> <span>Project Name:</span> <%= p.name%></h2>
+		
 	<p>
 		<%= link_to("View Details", project_path(p.id))%>
 	</p>
