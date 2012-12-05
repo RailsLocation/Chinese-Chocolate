@@ -1,0 +1,15 @@
+<h1>Chinese Chocolate Software Company</h1>
+
+<p><%= link_to("Create New Project",new_project_path) %></p>
+<ul>
+<% @projects.each do |p| %>
+<li>
+	<h4>
+		<%= p.name%>
+	</h4>
+	<p>
+		<%= link_to("View Details", project_path(p.id))%>
+	</p>
+</li>	
+<% end %>
+</ul>
