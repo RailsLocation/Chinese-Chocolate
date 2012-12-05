@@ -1,3 +1,86 @@
-// Place all the styles related to the projects controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+	margin: 0;
+
+
+}
+
+body{
+	
+	background-color: #0D6370;
+	width: 1024px;
+	height: 100px;
+	margin: auto;
+
+}
+#header{
+
+		width: 1024px;
+		top-margin: 20px;
+		margin: auto;
+		height: 100px;
+		background-color: #678;
+		line-height: 100px;
+		box-shadow: 3px 3px 2px black;
+}
+
+#header #logo {
+	
+	width: 100px;
+	height: 80px;
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+	
+}
+#logo:hover{
+	-webkit-transition-duration: 0.8s;
+	-webkit-transform: rotate(360deg) scale(1.5)
+}
+
+#title{
+	text-align: center;
+	color: red;
+	text-shadow: 2px 2px 2px black;
+}
+
+
+
+#maincontent{
+		minimum-height: 1000px;
+		top-margin: 0px;
+		background-color: #B4CBCF;
+		box-shadow: 3px 3px 2px black;
+}
+#abc ul {
+	
+	list-style-type: circle;
+}
+#menubar{
+	width: 1024px;
+	height:40px;
+	margin: 0px auto;
+	background-color: #fafaf6;
+	margin-top: 0px;
+	box-shadow: 3px 3px 2px black;
+
+}
+#menubar ul {
+	list-style: none;
+}
+#menubar ul li{
+	padding:7px;
+	padding-left: 20px;
+	display: block;
+	float: left;
+}
+#menubar li a{
+	padding: 5px 15px;
+	color:red;
+	-webkit-border-radius:5px;
+}
+#menubar ul li a:hover{
+	color:white;
+	/*float: right;*/
+	background-color: black;
+
+}

@@ -1,0 +1,10 @@
+<h1>Recruit Developer to this project</h1>
+<%= form_for([@project,@project.developers.build]) do |f| %>
+	<%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  <%= f.label :post %>
+  <%= f.text_field :post %>
+  <%= f.submit "Recruit" %>
+<% end %>

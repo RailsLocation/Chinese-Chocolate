@@ -1,2 +1,19 @@
 <h1><%= @project.name %></h1>
 <p><%= @project.description %></p>
+<section>
+<h4>
+ Developers involved in this project
+</h4> 
+<ul>
+<% @project.developers.each do |p| %>
+<li>
+  <h4>
+    <%= p.name%>
+  </h4>
+ </li> 
+<% end %>
+</ul>
+
+<!--<%= link_to "Developers involved", project_developer_path(@project.id) %> -->
+<p><%= link_to "Recruit new developer", new_project_developer_path(@project.id) %></p>
+</section>

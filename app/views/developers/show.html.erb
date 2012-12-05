@@ -1,0 +1,17 @@
+<section>
+<h4>
+ Developers involved in this project
+</h4> 
+<ul>
+<% @project.developers.each do |p| %>
+<li>
+	<h4>
+		<%= p.name%>
+	</h4>
+	
+</li>	
+<% end %>
+</ul>
+
+
+</section>
