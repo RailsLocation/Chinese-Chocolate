@@ -1,10 +1,10 @@
 class ProjectsController < ApplicationController
   def index
-    @projects=Project.all
+    @projects = Project.all
   end
 
   def show
-    @project=Project.find(params[:id])
+    @project = Project.find(params[:id])
   end
 
   def edit
@@ -14,11 +14,11 @@ class ProjectsController < ApplicationController
   end
 
   def new
-    @project=Project.new
+    @project = Project.new
   end
 
   def create
-    @project=Project.new(params[:project])
+    @project = Project.new(params[:project])
     if @project.save
       redirect_to projects_path
     else
@@ -27,7 +27,7 @@ class ProjectsController < ApplicationController
   end
 
   def destroy
-    @project=Project.find(params[:id])
+    @project = Project.find(params[:id])
     @project.destroy
     redirect_to projects_path
   end

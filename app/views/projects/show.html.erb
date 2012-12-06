@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <div id="header">
-    <img  id="logo" src="<%= asset_path( 'logo.png' ) %>" />
-    <h1 id="title">Chinese Chocolate Software Company</h1>
+  <div id = "header">
+    <img  id = "logo" src="<%= asset_path( 'logo.png' ) %>" />
+    <h1 id = "title">Chinese Chocolate Software Company</h1>
   </div>
-  <nav id="menubar">
+  <nav id = "menubar">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="">Gallery</a></li>
-        <li><a href="">Location</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Contact Us</a></li>
+        <li><a href = "#">Home</a></li>
+        <li><a href = "">Gallery</a></li>
+        <li><a href = "">Location</a></li>
+        <li><a href = "">About Us</a></li>
+        <li><a href = "">Contact Us</a></li>
       </ul>
         
     </nav>
 
-<div id="maincontent">
+<div id = "maincontent">
 <section >
-	<p class="contentmargin"> <span> Project:</span> <h3 class="contentmargin"> <%= @project.name %> </h3> </p>
-	<article class="contentmargin">
-		<span> Project Description:</span>:<h3 class="contentmargin"> <%= @project.description %></h3>
+	<p class = "contentmargin"> <span> Project:</span> <h3 class = "contentmargin"> <%= @project.name %> </h3> </p>
+	<article class = "contentmargin">
+		<span> Project Description:</span>:<h3 class = "contentmargin"> <%= @project.description %></h3>
 	</article>
 	
-	<article class="contentmargin">
+	<article class = "contentmargin">
 		<span>
  			Developers involved in this project:
 		</span> 
 	<ul>
 		<% @project.developers.each do |p| %>
 		<li>
- 			 <h4 class="contentmargin">
+ 			 <h4 class = "contentmargin">
   			  	<%= p.name %>
             <!--<%= link_to p.name ,project_developer_path(p.id)%> -->
   			</h4>
