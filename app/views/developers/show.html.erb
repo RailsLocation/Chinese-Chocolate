@@ -1,16 +1,12 @@
 <section>
 <h4>
- Developers involved in this project
+ Developer Info
 </h4> 
 <ul>
-<% @project.developers.each do |p| %>
-<li>
-	<h4>
-		<%= p.name%>
-	</h4>
+		<li> Name:<%= @developer.name %> </li>
+		<li> Address:<%= @developer.address %> </li>
+		<li> Post:<%= @developer.post %> </li>
 	
-</li>	
-<% end %>
 </ul>
 
 

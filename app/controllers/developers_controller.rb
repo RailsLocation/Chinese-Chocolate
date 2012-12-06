@@ -7,8 +7,11 @@ class DevelopersController < ApplicationController
   def create
     @project = Project.find(params[:project_id])
     @developer = @project.developers.new(params[:developer])
-    @developer.save!
-    redirect_to project_path(@project.id)
+    if @developer.save
+      redirect_to project_path(@project.id)
+    else 
+      render 'new'
+    end
   end
 
   def new
@@ -20,7 +23,7 @@ class DevelopersController < ApplicationController
   end
 
   def show
-    @project=Project.find(params[:project_id])
+    @developer=Developer.find(params[:id])
 
   end
 

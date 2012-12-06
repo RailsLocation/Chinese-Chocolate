@@ -1,4 +1,14 @@
 <%= form_for @project do |p| %>
+<% if @project.errors.any? %>
+<div id = "error_explanation">
+  <ul>
+  <% @project.errors.full_messages.each do |msg|%>
+    <li><%= msg %> </li>
+
+  <% end %>
+  </ul>
+</div>
+<% end %>
   <div class="contentmargin">
     <%= p.label :Name %><br />
     <%= p.text_field :name %>

@@ -26,7 +26,7 @@
 			<h2> <span>Project Name:</span> <%= p.name%></h2>
 		
 	<p>
-		<%= link_to("View Details", project_path(p.id))%>
+		<%= link_to("View Details", project_path(p.id))%> | <%= link_to("Delete",project_path(p.id),:method =>:delete, :confirm => "This project will be deleted, are you really sure?")%> 
 	</p>
 </li>	
 <% end %>
