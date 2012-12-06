@@ -23,7 +23,8 @@ class DevelopersController < ApplicationController
   end
 
   def show
-    @developer=Developer.find(params[:id])
+    @project = Project.find(params[:project_id])
+    @developer=@project.developers.find(params[:id])
 
   end
 

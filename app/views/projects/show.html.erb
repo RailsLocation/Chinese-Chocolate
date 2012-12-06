@@ -31,8 +31,8 @@
 		<% @project.developers.each do |p| %>
 		<li>
  			 <h4 class = "contentmargin">
-  			  	<%= p.name %>
-            <!--<%= link_to p.name ,project_developer_path(p.id)%> -->
+  			  
+            <%= link_to p.name ,project_developer_path(@project.id,p.id)%> -->
   			</h4>
  		</li> 
 <% end %>
